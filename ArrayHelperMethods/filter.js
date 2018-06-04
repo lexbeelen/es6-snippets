@@ -27,3 +27,21 @@ let filteredProducts = products.filter(function (product) {
 });
 
 console.log(filteredProducts);
+
+/* ECMAScript 2016 (ES6) - Example 3 */
+let post = {id: 4, title: 'New Post'};
+let comments = [
+    {postId: 4, content: 'awesome post'},
+    {postId: 3, content: 'it was ok'},
+    {postId: 4, content: 'neat'}
+];
+
+function commentsForPost(post, comments) {
+    return comments.filter(function (comment) {
+        return comment.postId === post.id;
+    });
+}
+
+let commentsResults = commentsForPost(post, comments);
+
+console.log(commentsResults);

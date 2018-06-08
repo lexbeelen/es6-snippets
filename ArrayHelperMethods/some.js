@@ -11,7 +11,7 @@ let onlySomeComputersCanRunProgram = computers.some(function (computer) {
 
 console.log(onlySomeComputersCanRunProgram);
 
-/* ECMAScript 2016 (ES6) - Example 1 */
+/* ECMAScript 2016 (ES6) - Example 2 */
 let names = [
     "Lex",
     "Lauren",

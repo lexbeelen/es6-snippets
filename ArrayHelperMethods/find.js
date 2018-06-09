@@ -1,23 +1,23 @@
 /* ECMAScript 2016 (ES6) - Example 1 */
-let users = [
+const users = [
     {name: 'Lex'},
     {name: 'Lauren'},
     {name: 'Boaz'}
 ];
 
-let user = users.find(function (user) {
+const user = users.find(function (user) {
     return user.name === 'Lex';
 });
 
 console.log(user);
 
 /* ECMAScript 2016 (ES6) - Example 2 */
-let posts = [
+const posts = [
     {id: 1, title: 'New Post'},
     {id: 2, title: 'Old Post'}
 ];
 
-let comment = {postId: 1, content: 'Great Post'};
+const comment = {postId: 1, content: 'Great Post'};
 
 function postForComment(posts, comment){
     return posts.find(function(post){
@@ -25,6 +25,6 @@ function postForComment(posts, comment){
     });
 }
 
-let post = postForComment(posts, comment);
+const post = postForComment(posts, comment);
 
 console.log(post);

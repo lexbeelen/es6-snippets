@@ -1,20 +1,20 @@
 /* ECMAScript 2016 (ES6) - Example 1 */
-let numbers = [10, 20, 30];
+const numbers = [10, 20, 30];
 
-let total = numbers.reduce(function (sum, number) {
+const total = numbers.reduce(function (sum, number) {
     return sum + number;
 }, 0);
 
 console.log(total);
 
 /* ECMAScript 2016 (ES6) - Example 2 */
-let primaryColors = [
+const primaryColors = [
     {color: 'Red'},
     {color: 'Yellow'},
     {color: 'Blue'}
 ];
 
-let colors = primaryColors.reduce(function (previous, primaryColor) {
+const colors = primaryColors.reduce(function (previous, primaryColor) {
     previous.push(primaryColor.color);
     return previous;
 }, []);
@@ -37,8 +37,8 @@ function balancedParens(string) {
     }, 0);
 }
 
-let balanced = balancedParens('((()))');
-let unBalanced = balancedParens('((()())');
+const balanced = balancedParens('((()))');
+const unBalanced = balancedParens('((()())');
 
 console.log(balanced);
 console.log(unBalanced);
